@@ -1,5 +1,5 @@
 <script>
-  import { auth } from "../../../lib/db";
+  import { auth } from "$lib/db";
   import { signInWithEmailAndPassword } from "firebase/auth";
 
   let email;
@@ -32,7 +32,7 @@
         <input type="password" placeholder="" name="password" class="input input-bordered" required bind:value={password}/>
       </label>
       <button class="btn" on:click={login}>Log In</button>
-      <a href="/producer/signup" class="btn bg-primary">Need an Account ?</a>
+      <a href="/signup" class="btn bg-primary">Need an Account ?</a>
     </div>
   </form>
 </div>
